@@ -531,14 +531,17 @@ footer {
 	border-radius: 4px
 }
 
-.project-image {
-	float: left
+.project-image img {
+	float: left;
+	height: 20%;
+	width: 20%
+	
 }
 
 .project-info {
-	position: absolute;
+	position: right;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-0%);
 	margin-left: 300px;
 	padding: 15px
 }
@@ -806,8 +809,10 @@ footer {
 	.education-block span {
 		float: none
 	}
-	.project-image {
-		display: none
+	.project-image img {
+		display: none;
+		height: 20%;
+		width: 20%
 	}
 	.project-info {
 		position: relative;
