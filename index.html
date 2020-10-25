@@ -10,8 +10,10 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src = "./js/scripts.js"></script>
+
 </head>
 
 <body>
@@ -37,9 +39,6 @@
                 <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
                 <a href="#contact">Contact</a>
             </li>
         </ul>
@@ -50,7 +49,6 @@
         <div id="lead-content">
             <h1>Tishya Khanna</h1>
             <h2>Make things simple</h2>
-            <a href="./resume/CV_TishyaKhanna.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -68,75 +66,141 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                    I am a Year 3 Computer Science student specializing in Computer Security and Data Systems. I enjoy pursuing interesting challenges,
-                    especially ones to do with automation. Looking for opportunities to grow and develop my development and product management skills. Always down for a chat!
-                    </p>
-                </div>
+                <div class="col-md-6">
+                    <div class="control">
+                        <div class="about-text">
+                            <h2 class="heading">About Me</h2>
+                        </div>
+                        <p>
+                            I am a Year 3 Computer Science student specializing in Computer Security and Data Systems. I enjoy pursuing interesting challenges,
+                            especially ones to do with automation. Looking for opportunities to become a better developer, product manager and entrepreneur. Always down for a chat! 
+                            </p>
+                            <button type="button" class="btn btn-primary" onclick="goToResume()">Resume</button>
+
+
+
+                    </div>
+
+
             </div>
+            <div class="col-md-6">            
+                <div class="skill-bar">
+                    <p>Java</p>
+                    <progress max="100" value="90"> 90% </progress>
+                    <div id="skills">
+                        <ul>
+                            <li>CLI Apps</li>
+                            <li>JavaFX</li>
+                            <li>Hadoop</li>
+                        </ul>
+                    </div>        
+                </div>
+                <div class="skill-bar">
+                    <p>Python</p>
+                    <progress max="100" value="75"> 75% </progress>
+                    <div id="skills">
+                        <ul>
+                            <li>CLI Apps</li>
+                            <li>Flask</li>
+                            <li>Automation tasks</li>
+                        </ul>
+                    </div>        
+                </div>
+                <div class="skill-bar">
+                    <p>SQL</p>
+                    <progress max="100" value="70"> 70% </progress>
+                    <div id="skills">
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>Presto</li>
+                        </ul>
+                    </div>        
+                </div>
+                <div class="skill-bar">
+                    <p>Others</p>
+                    <progress max="100" value="50"> 50% </progress>
+                    <div id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Shell Scripting</li>
+
+                        </ul>
+                    </div>        
+                </div>
+                <div class="skill-bar">
+                    <p>Javascript</p>
+                    <progress max="100" value="40"> 40% </progress>
+                    <div id="skills">
+                        <ul>
+                            <li>Vanilla JS</li>
+                            <li>Google App Scripts</li>
+                        </ul>
+                    </div>        
+                </div>
+
         </div>
+    </div>
+    </div>
     </div>
     <!-- End #about -->
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="August 2020 – Now">
-                <h3>Shopee</h3>
-                <h4>Product Management Intern (Part Time)</h4>
-                <p>
-                
-                    <ul>
-                        <li>In charge of Search Bad Case Evaluation for Malaysia</li>
-                        <li>Developing Google App and Python scripts to automate manual process</li>
-                        <li>Crafting data using SQL and Google Sheets to justify feature proposals</li>    
-                    </ul>                
-                </p>
-            </div>
-
-            <div data-date="May 2020 – July 2020">
-                <h3>Agency for Science, Technology and Research (A*STAR) & NUS School of Computing</h3>
-                <h4>Research Intern</h4>
-                <p>
-                    <ul>
-                        <li>Pioneered a Quick Start Guide for running Deep Learning jobs on supercomputers</li>
-                        <li>Created a PBS <a href="https://tishyakhanna97.github.io/astarWebsite/">script generation website</a> to flatten learning curves for supercomputer users</li>
-                    </ul>                   
-                </p>
-            </div>
-
-            <div data-date="December 2019 – January 2020">
-                <h3>NUS Information Technology</h3>
-                <h4>Mobile Application Development Intern</h4>
-                <p>
-                    <ul>
-                        <li>Selected by senior architects from NUS IT to implement a crowd control mobile application - <a href ="https://github.com/tishyakhanna97/ReactNative-Flask-Chat/blob/master/Final_NUS_IT_PPT.pptx">NoSqueeze</a></li>
-                        <li>Designed and developed the application using React Native and Python Flask. Implemented machine learning algorithms to predict crowd
-                            levels</li>
-                        <li>Presented the application to over 50 senior software developers, architects and managers from NUS IT</li>    
-                    </ul>     
-
-                </p>
-            </div>
-
-            <div data-date="May 2019 – Aug 2019">
-                <h3>Enterprise Singapore</h3>
-                <h4>Strategy and Planning Intern</h4>
-                <p>
-                    <ul>
-                        <li>Presented strategies for Singapore companies to expand to Cambodia, Laos, Vietnam, Myanmar and Brunei (CLVMB)</li>
-                        <li>Crafted pitch decks which were presented to the President, CEO and over 100 senior managers</li>
-                        <li>Wrote a <a href ="https://www.businesstimes.com.sg/asean-business/opportunities-to-start-up-in-vietnam">Business Times article</a> on the startup ecosystem in Vietnam</li> 
-                        <li></li>   
-                    </ul>     
-
-                </p>
-            </div>
+                <div id="experience-timeline">
+                    <div data-date="August 2020 – Now">
+                        <h3>Shopee</h3>
+                        <h4>Product Management Intern (Part Time)</h4>
+                        <p>
+            
+                            <ul>
+                                <li>In charge of Search Bad Case Evaluation for Malaysia</li>
+                                <li>Developing Google App and Python scripts to automate manual process</li>
+                                <li>Crafting data using SQL and Google Sheets to justify feature proposals</li>    
+                            </ul>                
+                        </p>
+                    </div>
+        
+                    <div data-date="May 2020 – July 2020">
+                        <h3>Agency for Science, Technology and Research (A*STAR) & NUS School of Computing</h3>
+                        <h4>Research Intern</h4>
+                        <p>
+                            <ul>
+                                <li>Pioneered a Quick Start Guide for running Deep Learning jobs on supercomputers</li>
+                                <li>Created a PBS <a href="https://tishyakhanna97.github.io/astarWebsite/">script generation website</a> to flatten learning curves for supercomputer users</li>
+                            </ul>                   
+                        </p>
+                    </div>
+        
+                    <div data-date="December 2019 – January 2020">
+                        <h3>NUS Information Technology</h3>
+                        <h4>Mobile Application Development Intern</h4>
+                        <p>
+                            <ul>
+                                <li>Selected by senior architects from NUS IT to implement a crowd control mobile application - <a href ="https://github.com/tishyakhanna97/ReactNative-Flask-Chat/blob/master/Final_NUS_IT_PPT.pptx">NoSqueeze</a></li>
+                                <li>Designed and developed the application using React Native and Python Flask. Implemented machine learning algorithms to predict crowd
+                                    levels</li>
+                                <li>Presented the application to over 50 senior software developers, architects and managers from NUS IT</li>    
+                            </ul>     
+        
+                        </p>
+                    </div>
+        
+                    <div data-date="May 2019 – Aug 2019">
+                        <h3>Enterprise Singapore</h3>
+                        <h4>Strategy and Planning Intern</h4>
+                        <p>
+                            <ul>
+                                <li>Presented strategies for Singapore companies to expand to Cambodia, Laos, Vietnam, Myanmar and Brunei (CLVMB)</li>
+                                <li>Crafted pitch decks which were presented to the President, CEO and over 100 senior managers</li>
+                                <li>Wrote a <a href ="https://www.businesstimes.com.sg/asean-business/opportunities-to-start-up-in-vietnam">Business Times article</a> on the startup ecosystem in Vietnam</li> 
+                                <li></li>   
+                            </ul>     
+        
+                        </p>
+                    </div>
         </div>
+
     </div>
     <!-- End #experience -->
 
@@ -145,7 +209,7 @@
         <div class="education-block">
             <h3>National University of Singapore</h3>
             <span class="education-date">August 2018 - May 2022</span>
-            <h4>Bachelor of Science in Computer Science [Computer Security and Data Systems]</h4>
+            <h4>Bachelor of Science in Computer Science</h4>
             <p>
                 <ul>
                     <li>Majoring in Computer Security and Databases</li>
@@ -159,7 +223,7 @@
         <div class="education-block">
             <h3>Raffles Institution</h3>
             <span class="education-date">Jan 2014 - Dec 2015</span>
-            <h4>SINGAPORE CAMBRIDGE GCE A LEVEL</h4>
+            <h4>Singapore Cambridge GCE A Level</h4>
             <ul>
                 <li>
                     Distinctions in H2 Physics, H2 Chemistry, H2 Mathematics, H2 Economics and H1 General Paper
@@ -172,17 +236,38 @@
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+   
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Out of School</h2>
+                    <div class="project shadow-large">
+                        <div class = "row">
+                            <div class="col-4">
+                                <div class="project-image img__wrap">
+                                    <img class="img__img" src="images/sumo.png" />
+                                </div>
+                                    <p class="img__description">SumoBot Competition 3rd Place</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="project-image">
+                                <img src="images/build_on.jpg" />
+                            </div>
+                                <p class="img__description">AWS BuildOn! Hackathon 3rd Place</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="project-image">
+                            <img src="images/nes.jpg" />
+                        </div>
+                            <p class="img__description">NUS Entrepreneurship Society Director</p>
+                </div>
+                </div>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Hadoop</li>
-        </ul>
+                </div>
+
+
     </div>
-    <!-- End #skills -->
+
+
+
 
 
     <footer>
